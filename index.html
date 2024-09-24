@@ -143,9 +143,9 @@
     </section>
     <!-- about 섹션 끝 -->
     <!-- 포트폴리오 섹션 시작 -->
-    <section id="portfolio" class="bg-white py-5">
+    <section id="portfolio" class="bg-black py-5">
       <div class="container">
-        <div class="text-center py-5 text-black">
+        <div class="text-center py-5 text-white">
           <h2 class="fw-bolder text-uppercase">My Portfolio</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -330,6 +330,48 @@
               Send Message
             </button>
           </form>
+		  <!-- Button trigger modal - 모달창을 여는 버튼 -->
+		  <button
+		  type="button"
+		  class="btn btn-primary"
+		  data-bs-toggle="modal"
+		  data-bs-target="#exampleModal"
+
+		>
+		  문의하기
+		</button>
+		<div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">문의하기</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">문의 시간이 아닙니다.</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              닫기
+            </button>
+            <button type="button" class="btn btn-primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
         </div>
       </div>
     </section>
