@@ -10,9 +10,14 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <title>Portfolio Website</title>
-    <style></style>
+    <style>
+      /* 부트스트랩외 css가 필요하면 여기서 작성 */
+      .active {
+        color: red !important;
+      }
+    </style>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
     <!-- 네브바 -->
     <nav
       class="navbar navbar-expand-md navbar-light bg-light fixed-top"
@@ -66,7 +71,8 @@
       <a href="#about" class="btn btn-danger rounded-pill">About Me</a>
     </section>
     <!-- 홈 섹션 끝 -->
-    <!-- about 섹션 시작 -->
+    <!-- about 섹션 시작 
+	 .은 클래스 id는#-->
     <section id="about" class="container py-5">
       <div class="text-center py-5">
         <h2 class="fw-bolder text-uppercase">about</h2>
@@ -266,5 +272,20 @@
       </div>
     </section>
     <!-- 컨텍트 섹션 끝 -->
+    <!-- 푸터 섹션 시작 -->
+    <footer class="bg-light">
+      <div class="container text-center">
+        <p class="mb-0 py-3 fs-5">
+          © 2022 부산IT교육센터 All rights reserved.
+          <a
+            href="#본인블로그주소"
+            class="text-danger fst-italic"
+            target="_blank"
+            >MyBlog</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- 푸터 섹션 끝 -->
   </body>
 </html>
